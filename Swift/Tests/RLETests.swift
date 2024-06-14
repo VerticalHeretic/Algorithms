@@ -11,8 +11,8 @@ import Testing
 
 struct RLETests {
     @Test func encodingTest() {
-        let input = "AAAAAABBBBBBCCCCC"
-        let want = "6A6B5C"
+        let input = Array("AAAAAABBBBBBCCCCC")
+        let want = Array("6A6B5C")
 
         let got = encode(input)
 
@@ -20,8 +20,8 @@ struct RLETests {
     }
 
     @Test func encodingTestOnEmptyInput() {
-        let input = ""
-        let want = ""
+        let input = Array("")
+        let want = Array("")
 
         let got = encode(input)
 
