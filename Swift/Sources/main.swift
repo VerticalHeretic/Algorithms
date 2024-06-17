@@ -2,3 +2,5 @@
 // https://docs.swift.org/swift-book
 
 print("Hello, world!")
+let tree = initExampleTree()
+print(tree)
